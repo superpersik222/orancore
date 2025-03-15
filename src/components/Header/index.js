@@ -26,7 +26,6 @@ const toggle = () =>{
             style={{
              transform: click ? "rotate(-45deg) translateY(0)" : "rotate(0deg) translateY(6px)"
             }}
-            
             >&nbsp;</span>
             <span className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
             style={{
@@ -39,10 +38,8 @@ const toggle = () =>{
              }}
             >&nbsp;</span>
             </div>
-
           </div>
         </button>
-
         <nav className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
@@ -54,6 +51,7 @@ const toggle = () =>{
         >
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mx-2">About</Link>
+            <Link href="/pricing" className="mx-2">Pricing</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" :
@@ -71,6 +69,7 @@ const toggle = () =>{
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mx-2">About</Link>
+            <Link href="/pricing" className="mx-2">Pricing</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" :
